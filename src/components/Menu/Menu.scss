@@ -90,8 +90,13 @@ body {
                 border: 1px solid var(--github);
             }
             svg {
+                transform: scale(.7);
                 fill: var(--github-button-hover);
-            }
+                -webkit-transform: scale(.7);
+                -moz-transform: scale(.7);
+                -ms-transform: scale(.7);
+                -o-transform: scale(.7);
+}
             i {
                 transform: scale(.7);
                 -webkit-transform: scale(.7);
@@ -99,6 +104,14 @@ body {
                 -ms-transform: scale(.7);
                 -o-transform: scale(.7);
 }
+        }
+        .hamburger-menu {
+            background: transparent;
+            border: none;
+            svg {
+                fill: var(--white);
+                color: var(--white);
+            }
         }
     }
 }
