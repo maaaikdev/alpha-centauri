@@ -1,17 +1,5 @@
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/home.css');
-:root {
-    --notification: #58A6FF;
-    --github-dark: #00295B;
-    --github-dark-lighter: #0D1117;
-    --github-dark-border: #30363D;
-    --github-button-hover: #8B949E;
-    --background: #00295B;
-    --color: #828B94;
-    --github: #C9D1D9;
-    --navigation-hover: #292F36;
-    --navbar-height: 4rem;
-    --white: #fff;
-}
+
 
 body {
     font-family: "Segoe UI", "Noto Sans", sans-serif;
@@ -40,6 +28,9 @@ body {
     padding: 0px 1rem;
     border-bottom: 1px solid var(--github-dark-border);
     align-items: center;
+    @media (max-width: 768px) {
+        position: initial;
+    }
     .logo__wrapper {
         display: flex;
         align-items: center;
