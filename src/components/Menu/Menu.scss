@@ -36,11 +36,14 @@ body {
         align-items: center;
         gap: 0.5rem;
         .logo {
-            width: 2rem;
-            height: 2rem;
+            // width: 2rem;
+            // height: 2rem;
             cursor: pointer;
             svg {
                 fill: var(--github);
+            }
+            img {
+                height: 70px;
             }
         }
         .page__title {
@@ -52,7 +55,7 @@ body {
             transition: all 0.45s ease-in-out;
             text-decoration: none;
             &:hover {
-                background: var(--background);
+                background: var(--main);
             }
             @media (max-width: 400px) {
                 display: none;
@@ -90,7 +93,12 @@ body {
                 border: 1px solid var(--github);
             }
             svg {
+                transform: scale(.7);
                 fill: var(--github-button-hover);
+                -webkit-transform: scale(.7);
+                -moz-transform: scale(.7);
+                -ms-transform: scale(.7);
+                -o-transform: scale(.7);
             }
             i {
                 transform: scale(.7);
@@ -98,9 +106,26 @@ body {
                 -moz-transform: scale(.7);
                 -ms-transform: scale(.7);
                 -o-transform: scale(.7);
-}
-        }
+            }
+        }        
     }
+    .menu-responsive {
+        .hamburger-menu {
+            background: transparent;
+            border: none;
+            svg {
+                fill: var(--white);
+                color: var(--white);
+            }
+        }
+    }    
+}
+
+.hidden {
+    display: none!important;
+}
+.visibility {
+    display: flex!important;
 }
 
 
@@ -125,7 +150,7 @@ body {
 }
 
 .navigation__menu {
-    background-color: var(        --background    );
+    background-color: var(--main);
     z-index: 3;
     border-left: 1px solid var(--github-dark-border);
     height: 100vh;
@@ -181,7 +206,7 @@ body {
             height: 0.4rem;
             padding: 0;
             &:hover  {
-                background-color: var(--background);
+                background-color: var(--main);
             }
             hr {
                 border: 1px solid var(--github-dark-border);
