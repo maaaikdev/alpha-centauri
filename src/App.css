@@ -1,1 +1,16 @@
-
+.btn-more-orange {
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--orange);
+    border: 1px solid var(--orange);
+    background-color: transparent;
+    padding: 12px 40px;
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
